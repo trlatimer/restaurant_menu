@@ -1,0 +1,65 @@
+/* =======================
+   Styles for finalproject
+==========================*/
+
+body {
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    background-image: url(background2.jpg);
+    border: 2px black solid;
+    border-radius: 25px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+ul li {
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: black;
+}
+
+.create {
+    text-align: right;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

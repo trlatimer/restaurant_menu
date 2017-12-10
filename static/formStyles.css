@@ -1,0 +1,43 @@
+/* ==============
+   MENU STYLES
+================*/
+
+body {
+    background-color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    background-image: url(background2.jpg);
+    border: 2px black solid;
+    border-radius: 25px;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: black;
+}

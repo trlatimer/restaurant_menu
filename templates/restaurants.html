@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Restaurants</title>
+    <link rel="stylesheet" type="text/css" href="../static/restaurantStyles.css">
+</head>
+<body>
+<div class="container">
+    <div class='header'>
+        <h1 class="title">Restaurants</h1>
+    </div><!-- header -->
+    <div class="flash">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+        <ul>
+        {% for message in messages %}
+            <li><strong>{{message}}</strong></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+    </div><!-- flash -->
+    <div class="content">
+        <a class="create" href="{{ url_for('newRestaurant')}}">
+            Create New Restaurant
+        </a>
+        <hr>
+        {% for r in restaurants %}
+        <h2>{{ r.name }}</h2>
+        <br>
+        <ul>
+            <li>
+            <a class="view" href="{{ url_for('showMenu', restaurant_id=r.id)}}">View Menu</a>
+            </li>
+            <li>
+            <a class="edit" href="{{ url_for('editRestaurant', restaurant_id = r.id)}}">Edit</a>
+            </li>
+            <li>
+            <a class="delete" href="{{ url_for('deleteRestaurant', restaurant_id = r.id)}}">Delete</a>
+            <br>
+            <hr>
+            </li>
+        </ul>
+        {% endfor %}
+    </div><!-- content -->
+    <div class="footer">
+        <p>&copy; 2017 - Tyler Latimer</p>
+    </div>
+</div><!-- Container -->
+</body>
+</html>
